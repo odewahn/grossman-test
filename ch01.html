@@ -2,22 +2,150 @@
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>atlas book skeleton</title>
-    <link rel="stylesheet" type="text/css" href="theme/html/html.css"/>
-    <script src="theme/html/javascripts/jquery.js"> </script>
-    <script src="theme/html/javascripts/codemirror.js"> </script>
-    <script src="theme/html/javascripts/coderunner.js"> </script>
-    <script src="theme/html/javascripts/jsrepl/jsrepl.js" id="jsrepl-script"> </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <link href="theme/html/stylesheets/codemirror.css" media="all" rel="stylesheet" type="text/css"/>
-  <link href="theme/html/stylesheets/book.css" media="all" rel="stylesheet" type="text/css"/>
+    <title>atlas book skeleton</title>
+
+    <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+   <script type="text/javascript" src="theme/html/javascripts/disqus.js"> </script>
+
+
+   <link href="theme/html/stylesheets/book.css" media="all" rel="stylesheet" type="text/css"/>
+   <link href="theme/html/stylesheets/codemirror.css" media="all" rel="stylesheet" type="text/css"/>
+
+   <script src="theme/html/javascripts/codemirror.js"> </script>
+   <script src="theme/html/javascripts/coderunner.js"> </script>
+   <script src="theme/html/javascripts/jsrepl/jsrepl.js" id="jsrepl-script"> </script>
+
+   <link rel="stylesheet" href="theme/html/stylesheets/atlas.css"/>
+
 
   </head>
+
   <body data-type="book">
-    <section class="pagenumrestart" data-type="chapter" data-pdf-bookmark="Chapter 1. Loop Structures" id="loop_structures">
+
+    <div class="navbar navbar-fixed-top" role="navigation">	
+      <div class="container">
+        <div class="navbar-header">	
+	  <img class="logo" src="theme/html/assets/logo-white.svg"/>
+          <a class="title" href="#">atlas book skeleton</a>
+        </div>
+
+	<div id="slideout">
+	    <span class="toc-control fa fa-bars"/>
+	    <div id="slideout_inner">
+		 <div class="input-group">
+	            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"/>
+	            <div class="input-group-btn">
+	               <button class="btn btn-default search-button" type="submit"><span class="fa fa-search"/></button>
+	            </div>
+	         </div>   
+	        <h2>Contents</h2>
+	        <nav data-type="toc" id="idp2461600"><ol><li data-type="chapter"><a href="ch01.html#loop_structures">Loop Structures</a><ol>
+
+
+
+
+<li data-type="sect1"><a href="ch01.html#fivedot1_introduction">5.1 Introduction</a></li>
+
+<li data-type="sect1"><a href="ch01.html#fivedot2_while_loops">5.2 While Loops</a></li>
+
+
+<li data-type="sect1"><a href="ch01.html#fivedot3_until_loops">5.3 Until Loops</a></li>
+
+<li data-type="sect1"><a href="ch01.html#fivedot4_for_loops_and_nested_loops">5.4 For Loops and Nested Loops</a><ol>
+
+
+<li data-type="sect2"><a href="ch01.html#for_loops">For Loops</a></li>
+
+<li data-type="sect2"><a href="ch01.html#nested_loops">Nested Loops</a></li>
+</ol></li>
+
+<li data-type="sect1"><a href="ch01.html#fivedot5_infinite_loops">5.5 Infinite Loops</a></li>
+
+<li data-type="sect1"><a href="ch01.html#fivedot6_example_finding_prime_numbers">5.6 Example: Finding Prime Numbers</a></li>
+
+<li data-type="sect1"><a href="ch01.html#fivedot7_summary">5.7 Summary</a><ol>
+
+
+
+
+<li data-type="sect2"><a href="ch01.html#fivedot7dot1_key_concepts">5.7.1 Key Concepts</a></li>
+
+<li data-type="sect2"><a href="ch01.html#fivedot7dot2_key_definitions">5.7.2 Key Definitions</a></li>
+</ol></li>
+
+<li data-type="sect1"><a href="ch01.html#fivedot8_exercises">5.8 Exercises</a></li>
+</ol></li><li data-type="chapter"><a href="ch02.html#arrays">Arrays</a><ol>
+
+
+
+
+<li data-type="sect1"><a href="ch02.html#sixdot1_introduction">6.1 Introduction</a></li>
+
+<li data-type="sect1"><a href="ch02.html#sixdot2_array_types">6.2 Array Types</a><ol>
+
+
+<li data-type="sect2"><a href="ch02.html#sixdot2dot1_one_dimensional_arrays">6.2.1 One-Dimensional Arrays</a></li>
+
+<li data-type="sect2"><a href="ch02.html#example_find_the_max">Example: Find the Max</a></li>
+
+<li data-type="sect2"><a href="ch02.html#sixdot2dot2_multi-dimensional_arrays">6.2.2 Multidimensional Arrays</a></li>
+
+<li data-type="sect2"><a href="ch02.html#example_find_the_max_en_dash_modified">Example: Find the Max—Modified</a></li>
+</ol></li>
+
+<li data-type="sect1"><a href="ch02.html#sixdot3_hashes">6.3 Hashes</a><ol>
+
+
+
+
+
+
+
+
+
+
+
+<li data-type="sect2"><a href="ch02.html#example_hash">Example: Hash</a></li>
+
+<li data-type="sect2"><a href="ch02.html#example_accessing_a_hash">Example: Accessing a Hash</a></li>
+
+
+<li data-type="sect2"><a href="ch02.html#example_find_the_max_en_dash_hash">Example: Find the Max—Hash</a></li>
+</ol></li>
+
+<li data-type="sect1"><a href="ch02.html#sixdot4_summary">6.4 Summary</a><ol>
+
+
+
+
+<li data-type="sect2"><a href="ch02.html#sixdot4dot1_key_concepts">6.4.1 Key Concepts</a></li>
+
+<li data-type="sect2"><a href="ch02.html#sixdot4dot2_key_definitions">6.4.2 Key Definitions</a></li>
+</ol></li>
+
+<li data-type="sect1"><a href="ch02.html#sixdot5_exercises">6.5 Exercises</a></li>
+</ol></li></ol></nav>
+	    </div>
+	</div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <section class="pagenumrestart" data-type="chapter" data-pdf-bookmark="Chapter 1. Loop Structures" id="loop_structures">
 <h1>Loop Structures</h1>
 
-<aside data-type="sidebar" id="idm960256">
+<aside data-type="sidebar" id="idp4473904">
 <h5>In This Chapter</h5>
 
 <ul>
@@ -59,7 +187,8 @@
     <code class="mi">6</code> <code class="k">end</code>
 </pre>
 
-<div><a 
+<div><a href="https://www.nitrous.io/hack_button?source=embed&amp;runtime=rails&amp;repo=odewahn%2Fcs-ruby-basics&amp;file_to_open=ch5%2F5-1.rb" style="border:0;text-decoration:none"><img alt="Hack odewahn/cs-ruby-basics on Nitrous.IO" src="https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png"/></a></div>
+
 <p> </p>
 </div>
 
@@ -70,15 +199,13 @@
 <p>The control flow enters the while loop at the instruction: <code>while</code> (condition). This statement determines whether the control enters the body of the loop. If the condition evaluates to true, then the statements within the loop are executed. If the condition evaluates to false, then the control flow goes to the instruction, <code>end</code>, and the loop is exited. In the case where <code>condition</code> is <code>true</code>, the control flow will continue through all the statements between 1 and <em>n</em>, where <em>n</em> is any number greater than 0. Once a statement has finished executing, the control flow jumps back to the first instruction, <code>while</code> (condition), and the whole process starts over.</p>
 
 <p>To clarify, a Ruby example is shown in . Its corresponding flowchart is shown in .</p>
-
-
-<textarea class="pre " data-code-language="ruby" data-executable="true" data-type="programlisting" style="margin: 0px 0px 10px; width: 471px; height: 156px;"> n = 5
- i = 0
- while (i <= n)
-    puts i
-    i = i + 1
- end
-</textarea>
+<pre class="pre " data-code-language="ruby" data-executable="true" data-type="programlisting" style="margin: 0px 0px 10px; width: 471px; height: 156px;"> <code class="n">n</code> <code class="o">=</code> <code class="mi">5</code>
+ <code class="n">i</code> <code class="o">=</code> <code class="mi">0</code>
+ <code class="k">while</code> <code class="p">(</code><code class="n">i</code> <code class="o">&gt;=</code> <code class="n">n</code><code class="p">)</code>
+    <code class="nb">puts</code> <code class="n">i</code>
+    <code class="n">i</code> <code class="o">=</code> <code class="n">i</code> <code class="o">+</code> <code class="mi">1</code>
+ <code class="k">end</code>
+</pre>
 
 <figure style="float: 0" id="fig0502"><img src="images/cspr_0502.png"/>
 <figcaption>Counting program flowchart</figcaption>
@@ -169,13 +296,11 @@
 
 <p>A <em>for loop</em> takes a group of elements and runs the code within the loop for each element. This can be used to run a piece of code a certain number of times, or the operations can actually be based on the value. In , we see <code>puts num</code> is executed once for each value of <code>num</code>. That is, the loop will execute six times, and six lines with numbers 0 through 5 written one number per line will be generated. The range of values for <code>num</code> is defined by the construct <code>0..5</code> (see line 1), which represents all the integer values between 0 and 5 inclusive.</p>
 
-
 <pre class="pre" data-code-language="ruby" data-executable="true" data-type="programlisting">
  <code class="k">for</code> <code class="n">num</code> <code class="k">in</code> <code class="p">(</code><code class="mi">0</code><code class="o">.</code><code class="n">.</code><code class="mi">5</code><code class="p">)</code>
     <code class="nb">puts</code> <code class="n">num</code>
  <code class="k">end</code>
 </pre>
-
 </section>
 
 <section data-type="sect2" data-pdf-bookmark="Nested Loops" id="nested_loops">
@@ -184,15 +309,13 @@
 <p>A <em>nested loop</em> is a loop inside another loop. Although all kinds of loops can be nested, the most common nested loop involves for loops. These loops are particularly useful when displaying multidimensional data.</p>
 
 <p>When using these loops, the first iteration of the first loop will initialize, followed by the second loop. The second loop will completely finish before the first loop moves on to its next iteration. If that sounds confusing, the example in should help you understand the concept. Its corresponding flowchart is shown in .</p>
-
-
-<textarea class="pre " data-code-language="ruby" data-executable="true" data-type="programlisting"> for i in (1..3)
-    puts "Outer loop: i = " + i.to_s
-    for k in (1..4)
-       puts "Inner loop: k = " + k.to_s
-    end
- end
-</textarea>
+<pre class="pre " data-code-language="ruby" data-executable="true" data-type="programlisting"> <code class="k">for</code> <code class="n">i</code> <code class="k">in</code> <code class="p">(</code><code class="mi">1</code><code class="o">.</code><code class="n">.</code><code class="mi">3</code><code class="p">)</code>
+    <code class="nb">puts</code> <code class="s2">"Outer loop: i = "</code> <code class="o">+</code> <code class="n">i</code><code class="o">.</code><code class="n">to_s</code>
+    <code class="k">for</code> <code class="n">k</code> <code class="k">in</code> <code class="p">(</code><code class="mi">1</code><code class="o">.</code><code class="n">.</code><code class="mi">4</code><code class="p">)</code>
+       <code class="nb">puts</code> <code class="s2">"Inner loop: k = "</code> <code class="o">+</code> <code class="n">k</code><code class="o">.</code><code class="n">to_s</code>
+    <code class="k">end</code>
+ <code class="k">end</code>
+</pre>
 
 <p>If you execute the program presented, you will see that the outer loop is displayed three times. However, between each outer loop, four iterations of the inner loop are run.</p>
 
@@ -215,12 +338,12 @@
 
 <div data-type="example" id="infinite_loops">
 <h5>Infinite loops</h5>
-<pre class="pre " data-code-language="ruby" data-type="programlisting">    1 puts “Count from 0 to ?”
-    2 n = gets.to_i
-    3 i = 5
-    4 while (i > 0)
-    5 	i = i + 2
-    6 end
+<pre class="pre " data-code-language="ruby" data-type="programlisting">    <code class="mi">1</code> <code class="nb">puts</code> <code class="s2">"Count from 0 to ?"</code>
+    <code class="mi">2</code> <code class="n">n</code> <code class="o">=</code> <code class="nb">gets</code><code class="o">.</code><code class="n">to_i</code>
+    <code class="mi">3</code> <code class="n">i</code> <code class="o">=</code> <code class="mi">5</code>
+    <code class="mi">4</code> <code class="k">while</code> <code class="p">(</code><code class="n">i</code> <code class="o">&gt;</code> <code class="mi">0</code><code class="p">)</code>
+    <code class="mi">5</code> 	<code class="n">i</code> <code class="o">=</code> <code class="n">i</code> <code class="o">+</code> <code class="mi">2</code>
+    <code class="mi">6</code> <code class="k">end</code>
 </pre></div>
 
 <p>Assume you realize that you are in an endless loop, and you want to fix it. Sometimes new programmers simply execute the program again <em>with no changes</em>. Let us assure you that if you do not make a change, nothing will change. The program will once again run indefinitely.</p>
@@ -232,32 +355,30 @@
 <h1>5.6 Example: Finding Prime Numbers</h1>
 
 <p>You now know enough to write numerous computer programs in Ruby, and we will soon finally be able to stop worrying about the details of a programming language and return to the fundamentals of computer science. In fact, at this point, you really know enough to compute mathematically just about anything that can be computed. To provide a little more practice with the topics we have discussed, let’s return to our prime number example. First we present a Ruby implementation (), and then we explain the algorithm illustrated in detail.</p>
-
-
-<textarea class="pre" data-code-language="ruby" data-executable="true" data-type="programlisting"># Initialize our counter
-i = 1
-# i: [0, 100]
-while (i <= 100)
-   # Initialize prime flag
-   prime_flag = true
-   j = 2
-   # Test divisibility of i from [0, i/2]
-   while (j <= i / 2)
-     #   puts " i ==> " + i.to_s + " j ==> " + j.to_s
-     if (i % j == 0)
-       prime_flag = false
-       break
-     end
-     j = j + 1
-   end
-   # We found a prime!
-   if prime_flag
-     puts "Prime ==> " + i.to_s
-   end
-   # Increment the counter
-   i += 1
-end
-</textarea>
+<pre class="pre" data-code-language="ruby" data-executable="true" data-type="programlisting"><code class="c1"># Initialize our counter</code>
+<code class="n">i</code> <code class="o">=</code> <code class="mi">1</code>
+<code class="c1"># i: [0, 100]</code>
+<code class="k">while</code> <code class="p">(</code><code class="n">i</code> <code class="o">&lt;=</code> <code class="mi">100</code><code class="p">)</code>
+   <code class="c1"># Initialize prime flag</code>
+   <code class="n">prime_flag</code> <code class="o">=</code> <code class="kp">true</code>
+   <code class="n">j</code> <code class="o">=</code> <code class="mi">2</code>
+   <code class="c1"># Test divisibility of i from [0, i/2]</code>
+   <code class="k">while</code> <code class="p">(</code><code class="n">j</code> <code class="o">&lt;=</code> <code class="n">i</code> <code class="o">/</code> <code class="mi">2</code><code class="p">)</code>
+     <code class="c1"># puts " i ==&gt; " + i.to_s + " j ==&gt; " + j.to_s</code>
+     <code class="k">if</code> <code class="p">(</code><code class="n">i</code> <code class="o">%</code> <code class="n">j</code> <code class="o">==</code> <code class="mi">0</code><code class="p">)</code>
+       <code class="n">prime_flag</code> <code class="o">=</code> <code class="kp">false</code>
+       <code class="c1"># break</code>
+     <code class="k">end</code>
+     <code class="n">j</code> <code class="o">=</code> <code class="n">j</code> <code class="o">+</code> <code class="mi">1</code>
+   <code class="k">end</code>
+   <code class="c1"># We found a prime!</code>
+   <code class="k">if</code> <code class="n">prime_flag</code>
+     <code class="nb">puts</code> <code class="s2">"Prime ==&gt; "</code> <code class="o">+</code> <code class="n">i</code><code class="o">.</code><code class="n">to_s</code>
+   <code class="k">end</code>
+   <code class="c1"># Increment the counter</code>
+   <code class="n">i</code> <code class="o">+=</code> <code class="mi">1</code>
+<code class="k">end</code>
+</pre>
 
 <p>Recall that a number is considered prime if and only if its only divisors, commonly called factors, are 1 and itself. For example, 9 is not prime while 7 is. As hinted in , it is unnecessary to check for factors until you reach the actual number (minus one) since the largest divisor must be no greater than half the number itself. A prime number implementation can be optimized by using the knowledge that we can terminate the loop early.</p>
 
@@ -420,5 +541,35 @@ end
 </ol>
 </section>
 </section>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+	<div class="row">
+	  <div class="pagination">
+	      <ul>
+	        <li class="prev"><span class="fa fa-chevron-left"/> </li>
+	        <li class="next"><a href="ch02.html">Next</a> <span class="fa fa-chevron-right"/></li>
+	      </ul>
+	  </div>       
+	</div>
+    </div>
+
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12 disqus">
+	     <div id="disqus_thread"/>
+	   </div>
+       </div>
+    </div>
+ 
+    <div class="footer">
+      <footer>
+        <p>© O'Reilly Media, 2014</p>
+      </footer>
+    </div>
+
   </body>
+
 </html>

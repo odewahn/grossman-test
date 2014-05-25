@@ -9,6 +9,7 @@ function makeCodeMirror(el, runNum)
     //stylesheet: "css/xmlcolors.css",
     //path: "js/",
     //continuousScanning: 500,
+    lineNumbers: true
   });
 }
 
